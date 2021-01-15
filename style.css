@@ -1,0 +1,66 @@
+/* first iteration of my website :) */
+
+body {
+  font-family: Source Code Pro, sans-serif;
+  margin: 2em;
+  background-color: #cedbf0;
+}
+
+h1 {
+  font-weight: 900;
+  color: #f6cac9;
+}
+
+p {
+  text-align: center;
+}
+
+/* modify colors of links, visited links, and link hover */
+
+a:link {
+  color: #E5B1C2;
+  background-color: #E4FEEE;
+}
+
+a:visited {
+  color: #E5B1C2;
+}
+
+a:hover {
+  color: #C5F0D6;
+  transition-duration: 1s;
+}
+
+/* style name container */
+
+.name {
+  margin: auto;
+  text-align: center;
+  text-shadow: 3px 3px #C5F0D6;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px #FBFFBD;
+  width: 25em;
+  max-width: 100%;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+/* style main container */
+
+.main {
+  margin: auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px #FBFFBD;
+  padding: 20px;
+  width: 25em;
+  max-width: 100%;
+  margin-bottom: 2em;
+}
