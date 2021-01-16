@@ -1,54 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta
       name="description"
-      content="Hi, I'm Julie, a student studying computer science at Oberlin College. At the moment, I'm enrolled in the NYC Web Development Fellowship and working as a software engineering intern for Swervelogic."
+      content="
+			Hi, I'm Julie, a student studying computer science at Oberlin College. I'm currently taking a gap year to explore my interests in creative computing.
+			
+			At the moment, I'm enrolled in the NYC Web Development Fellowship, a coding bootcamp offered through the NYC Tech Talent Pipeline. I'm also teaching kids how to code at Juni Learning.
+			
+			Earlier in my gap year, I worked as a software engineering intern for SwerveLogic.
+			
+			Feel free to get in touch!
+			"
     />
 
     <title>Julie Lam</title>
 
-    <!-- import stylesheets -->
     <link rel="stylesheet" href="/style.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
     />
+
     <link
       rel="icon"
       href="https://cdn.glitch.com/8d655228-a4bc-46b2-ab36-f848153d9051%2Ficon-1.gif?v=1601606259999"
       type="image/x-icon"
     />
+
+    <script
+      src="https://kit.fontawesome.com/3a80871445.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/script.js" defer></script>
   </head>
 
   <body>
-    <div class="name">
+    <div class="header box">
       <h1>JULIE LAM</h1>
+
+      <span class="links">
+        <a href="mailto:jlam2@oberlin.edu" target="_blank" class="icon">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/julie-anne-lam/"
+          target="_blank"
+          class="icon"
+        >
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://github.com/blouhie" target="_blank" class="icon">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </span>
     </div>
 
-    <div class="main">
+    <div class="main box">
       <p>
         Hi, I'm Julie, a student studying computer science at Oberlin College.
         I'm currently taking a gap year to explore my interests in creative
         computing.
-        <br />
-        <br />
-        At the moment, I'm enrolled in the <a
+      </p>
+      <p>
+        At the moment, I'm enrolled in the
+        <a
           href="https://www.fullstackacademy.com/nyc-fellowship"
           target="_blank"
-          >NYC Web Development Fellowship</a> and
-        working as a software engineering intern for SwerveLogic.
-        <br />
-        <br />
-        Feel free to
-        <a href="mailto:jlam2@oberlin.edu" target="_blank">get in touch!</a>
+          >NYC Web Development Fellowship</a
+        >, a coding bootcamp offered through the NYC Tech Talent Pipeline. I'm
+        also teaching kids how to code at
+        <a href="https://junilearning.com/" target="_blank">Juni Learning</a>.
       </p>
+      <p>
+        Earlier in my gap year, I worked as a software engineering intern for
+        <a href="http://swervelogic.com/" target="_blank">SwerveLogic</a>.
+      </p>
+      <p>Feel free to get in touch!</p>
     </div>
-
-    <!-- import javascript file -->
-    <script src="/script.js" defer></script>
   </body>
 </html>
