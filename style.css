@@ -49,6 +49,13 @@ p a:hover {
   max-width: 100%;
 }
 
+@media screen and (max-width: 390px) {
+  /* make box margin look bigger on small screens */
+  .box {
+    width: 20em;
+  }
+}
+
 /* header */
 
 .header {
@@ -61,18 +68,20 @@ p a:hover {
   -webkit-text-stroke-color: black;
 }
 
-/* main */
-
-.main {
-  margin-bottom: 2em;
-}
-
 /* header links */
 
 .links {
   float: inline-end;
   margin: auto;
-  margin-top: 0.75em;
+  margin-top: 0.5em;
+}
+
+@media screen and (max-width: 390px) {
+  /* make icon container responsive to small screens */
+  .links {
+    float: none;
+    margin-top: 0.9em;
+  }
 }
 
 .links a {
@@ -81,10 +90,22 @@ p a:hover {
 }
 
 .icon {
-  padding: 5px;
+  padding: 0.3em;
 }
 
 .icon:hover {
   opacity: 0.4;
   transition-duration: 0.75s;
 }
+
+/* main */
+
+.main {
+  margin-bottom: 2em;
+}
+
+/* TODO: 
+- email tooltip
+- accessibility
+- resume & projects
+ */
