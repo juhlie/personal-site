@@ -70,6 +70,7 @@ ul {
 
 h1 {
   display: inline;
+  letter-spacing: 4px;
 }
 
 /* header links */
@@ -94,7 +95,7 @@ h1 {
 }
 
 .icon {
-  padding: 0.3em;
+  padding: 0.5em;
 }
 
 .icon:hover {
