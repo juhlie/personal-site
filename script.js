@@ -11,10 +11,10 @@ const days = [
 console.log(`
 ✧･ﾟ: *✧･ﾟ*･ﾟ✧*:･ﾟ✧･ﾟ: *✧･ﾟ･ﾟ✧*:･ﾟ✧✧･ﾟ: *✧･ﾟ･ﾟ✧*:･ﾟ✧
 
-why hello there curious creature ~(=^‥^)ﾉ◎～
+why hello there curious creature ʕ ˵• ₒ •˵ ʔ
 			 
-	how do you do on this fine ${days[day]}? 
+ʕ •ᴥ•ʔゝ how do you do on this fine ${days[day]}? 
 
-nothing to see here	ฅ^•ﻌ•^ฅ 
+nothing to see here	ʕ•ᴥ•ʔﾉ ♡ ┬┴┬┴┤•ᴥ•ʔ├┬┴┬┴
 
 ✧･ﾟ: *✧･ﾟ*･ﾟ✧*:･ﾟ✧･ﾟ: *✧･ﾟ･ﾟ✧*:･ﾟ✧✧･ﾟ: *✧･ﾟ･ﾟ✧*:･ﾟ✧`);

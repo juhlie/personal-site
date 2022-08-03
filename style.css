@@ -8,6 +8,15 @@ body {
   /* #d2daee #dae0f2 #D2D9EF */
 }
 
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+}
+
 /* colors of links, visited links, and link hover */
 
 .main {
@@ -46,7 +55,7 @@ ul {
   padding: 1.5em 2.5em;
   box-sizing: border-box;
   box-shadow: 10px 10px #efe9e7;
-  width: 47em;
+  width: 49em;
   max-width: 100%;
 }
 
@@ -71,6 +80,11 @@ ul {
 h1 {
   display: inline;
   letter-spacing: 4px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #f9cff2;
 }
 
 /* header links */
