@@ -10,7 +10,23 @@ body {
 
 img {
   max-height: 100%;
-  max-width: 100%;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 390px) {
+  /*  make images proprotionally larger on small screens  */
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 180%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+figure {
+  margin-top: 2em;
+  margin-bottom: 3em;
 }
 
 figcaption {
@@ -64,6 +80,10 @@ ul {
   .box {
     width: 20em;
   }
+}
+
+.main {
+  margin-bottom: 5em;
 }
 
 /* header */
