@@ -15,7 +15,7 @@ img {
 
 @media screen and (max-width: 390px) {
   /*  make images proprotionally larger on small screens  */
-  img {
+  .main img {
     margin-left: auto;
     margin-right: auto;
     min-width: 180%;
@@ -152,6 +152,37 @@ h1:hover {
   width: 1px;
 }
 
-/* TODO: 
-- email tooltip
- */
+/* redirect phone */
+
+#redirect {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+#redirect img {
+  max-width: 40rem;
+  max-height: 60rem;
+}
+
+#redirect span {
+  position: fixed;
+  top: 32%;
+  left: 60%;
+  transform: translate(-60%, -32%);
+  width: 70%;
+  color: white;
+  text-align: center;
+  filter: blur(0.5px);
+  text-shadow: 0.7px 0.7px white;
+}
+
+#redirect a {
+  color: white;
+}
+
+#redirect a:hover {
+  color: rgb(255, 230, 0);
+}
