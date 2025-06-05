@@ -15,7 +15,7 @@ img {
 
 @media screen and (max-width: 390px) {
   /*  make images proprotionally larger on small screens  */
-  img {
+  .main img {
     margin-left: auto;
     margin-right: auto;
     min-width: 180%;
@@ -152,6 +152,46 @@ h1:hover {
   width: 1px;
 }
 
-/* TODO: 
-- email tooltip
- */
+/* redirect phone */
+
+#redirect {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+#redirect img {
+  max-width: 40rem;
+  max-height: 60rem;
+  filter: drop-shadow(0 0 1rem #a0a4ab) saturate(80%);
+}
+
+#redirect img:hover {
+  filter: drop-shadow(0 0 1rem #f9cff2);
+  transition-duration: 0.2s;
+}
+
+#redirect span:hover + img {
+  filter: drop-shadow(0 0 1rem #f9cff2);
+  transition-duration: 0.2s;
+}
+
+#redirect span {
+  position: fixed;
+  width: 70%;
+  top: 21%;
+  left: 18%;
+  color: white;
+  text-align: center;
+  filter: blur(0.5px);
+  text-shadow: 0.7px 0.7px white;
+  z-index: 100;
+}
+
+#redirect a {
+  color: white;
+}
+
+#redirect a:hover {
+  color: rgb(255, 217, 0);
+}
