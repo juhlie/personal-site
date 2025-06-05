@@ -163,6 +163,17 @@ h1:hover {
 #redirect img {
   max-width: 40rem;
   max-height: 60rem;
+  filter: drop-shadow(0 0 1rem #a0a4ab) saturate(80%);
+}
+
+#redirect img:hover {
+  filter: drop-shadow(0 0 1rem #f9cff2);
+  transition-duration: 0.2s;
+}
+
+#redirect span:hover + img {
+  filter: drop-shadow(0 0 1rem #f9cff2);
+  transition-duration: 0.2s;
 }
 
 #redirect span {
@@ -174,6 +185,7 @@ h1:hover {
   text-align: center;
   filter: blur(0.5px);
   text-shadow: 0.7px 0.7px white;
+  z-index: 100;
 }
 
 #redirect a {
@@ -181,5 +193,5 @@ h1:hover {
 }
 
 #redirect a:hover {
-  color: rgb(255, 230, 0);
+  color: rgb(255, 217, 0);
 }
