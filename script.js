@@ -33,6 +33,7 @@ phone.style.top = "50%";
 phone.style.transform = "translate(-50%, -50%)";
 
 let target; // used for cursor grab indicator
+
 phone.addEventListener("pointerdown", grabPhone);
 
 function grabPhone(event) {
@@ -44,7 +45,7 @@ function grabPhone(event) {
   target = event.target;
   target.style.setProperty("cursor", "grabbing");
   phone.addEventListener("pointerup", () =>
-    event.target.style.removeProperty("cursor")
+    target.style.removeProperty("cursor")
   );
 
   drag(event.clientX, event.clientY);
@@ -66,17 +67,13 @@ function drag(startX, startY) {
     phone.style.transform = "translate(0px, 0px)";
 
     target.style.removeProperty("cursor");
-    phone.removeEventListener("pointermove", movePhone);
-    phone.removeEventListener("pointerup", stopDrag);
+    document.removeEventListener("pointermove", movePhone);
     document.removeEventListener("pointerup", stopDrag);
-    phone.removeEventListener("pointercancel", stopDrag);
     document.removeEventListener("pointercancel", stopDrag);
   }
 
-  phone.addEventListener("pointermove", movePhone);
-  phone.addEventListener("pointerup", stopDrag);
+  document.addEventListener("pointermove", movePhone);
   document.addEventListener("pointerup", stopDrag);
-  phone.addEventListener("pointercancel", stopDrag);
   document.addEventListener("pointercancel", stopDrag);
-  phone.addEventListener("contextmenu", (e) => e.preventDefault());
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
 }
