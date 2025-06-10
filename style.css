@@ -179,6 +179,7 @@ h1:hover {
 #redirect img:hover {
   filter: drop-shadow(0 0 1rem #f9cff2);
   transition-duration: 0.2s;
+  cursor: grab;
 }
 
 #redirect span:hover + img {
@@ -196,6 +197,10 @@ h1:hover {
   filter: blur(0.5px);
   text-shadow: 0.7px 0.7px white;
   z-index: 100;
+}
+
+#redirect span:hover {
+  cursor: grab;
 }
 
 #redirect a {
