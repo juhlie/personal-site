@@ -40,7 +40,7 @@ function grabPhone(event) {
   event.preventDefault();
   phone.style.left = phone.getBoundingClientRect().x + "px";
   phone.style.top = phone.getBoundingClientRect().y + "px";
-  phone.style.transform = "translate(0px, 0px) scale(1.05)";
+  phone.style.transform = "translate(0px, 0px) scale(1.02)";
 
   target = event.target;
   target.style.setProperty("cursor", "grabbing");
@@ -58,7 +58,7 @@ function drag(startX, startY) {
 
     const deltaX = event.clientX - startX;
     const deltaY = event.clientY - startY;
-    phone.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(1.05)`;
+    phone.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(1.02)`;
   }
 
   function stopDrag() {
